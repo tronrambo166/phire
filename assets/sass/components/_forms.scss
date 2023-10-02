@@ -1,0 +1,165 @@
+/*-------------------------------------------------
+    [ ## Fields ]
+*/
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    &:focus {
+        outline: none;
+    }
+}
+input,textarea{
+    padding: 12px 20px;
+    &::placeholder{
+        color: $color__text;
+    }
+}
+textarea {
+    display: block;
+    width: 100%;
+    display: block;
+    min-height: 120px;
+}
+input,
+select,
+textarea {
+    border: none;
+    // border-bottom: 1px solid $border--base;
+    vertical-align: baseline;
+    font-size: 100%;
+    color: $color__heading;
+}
+label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: $font_heading;
+    display: block;
+}
+/*-------------------------------------------------
+    [ ## Forms ]
+*/
+select{
+    outline: none;
+    cursor: pointer;
+}
+.input-group{
+    margin-bottom: 15px;
+    flex-wrap: nowrap;
+    input{
+        border-radius: 5px 0 0 5px;
+        border: 1px solid rgba(107, 124, 147, 0.15);
+        color: #6b7c93;
+        height: 45px;
+    }
+}
+.form-control:disabled, .form-control[readonly]{
+    background-color: rgba($base--color, 0.2);
+}
+.input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+}
+.input-group-append{
+    input{
+        border-radius: 5px 0 0 5px;
+        border: 1px solid $border--base;
+        border-right: none;
+        background-color: $white;
+    }
+}
+.input-group-text {
+    border: none;
+    font-size: 14px;
+    background: $border--base;
+    color: $white;
+    height: 45px;
+    border-radius: 0 5px 5px 0;
+    font-weight: 500;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-control{
+    border: none;
+    font-size: 14px;
+    height: 50px;
+    &:focus{
+        box-shadow: none;
+        border: none;
+    }
+}
+.form--control{
+    background-color: transparent;
+    border: 1px solid $border--base;
+    border-radius: 10px;
+    box-shadow: none;
+    height: 45px;
+    color: $white;
+    font-size: 15px;
+    font-family: $font_heading;
+    font-weight: 600;
+    padding: 10px 10px;
+    width: 100%;
+    &::placeholder{
+        color: rgba($color__text, 0.6);
+    }
+    &:focus{
+        border-color: $base--color;
+    }
+}
+.input-group{
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+    .nice-select{
+        width: auto;
+        padding: 0 30px 0 15px;
+        border: none !important;
+        background-color: $base--color !important;
+        color: $white !important;
+        line-height: 45px;
+        &::after{
+            border-bottom: 2px solid $white;
+            border-right: 2px solid $white;
+        }
+    }
+}
+
+.nice-select{
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid $border--base !important;
+    float: unset;
+    padding: 0 25px;
+    color: $white !important;
+    .list{
+        background-color: $section--bg;
+        left: auto;
+        right: 0;
+    }
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{
+    background-color: $base--color;
+}
+
+
+.show_hide_password{
+    position: relative;
+    input{
+        padding-right: 50px;
+    }
+}
+.show-pass {
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    font-size: 14px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  .modal-fields{
+    textarea.form--control{
+        min-height: 45px;
+    }
+  }

@@ -1,0 +1,137 @@
+/*-------------------------------------------------
+    [ ## Theme Wrapper ]
+*/
+.light-mode{
+    background-color: #fff;
+    color: #464346;
+    .page-wrapper .sidebar-menu{
+        background: #fff;
+        box-shadow: 2px 3.464px 24px 0px rgba(106, 105, 194, 0.2);
+    }
+    .page-wrapper .sidebar-menu .sidebar-nav .sidebar-nav-item.active .sidebar-nav-link {
+        background: rgba($base--color, 0.3);
+        color: $base--color;
+    }
+    .page-wrapper .sidebar-menu .sidebar-nav .sidebar-nav-item .sidebar-nav-link:hover {
+        background: rgba($base--color, 0.3);
+        color: $base--color;
+    }
+    .page-wrapper .sidebar-menu .sidebar-nav .sidebar-nav-item.has-sub .sidebar-nav-link::before {
+        color: #000;
+    }
+    .page-wrapper .sidebar-menu .sidebar-nav .sidebar-nav-item .sidebar-nav-link{
+        color: #000;
+        font-weight: 600;
+    }
+    .page-wrapper .sidebar-menu .sidebar-wrapper .avatar-wrapper .avatar-content .profile-name{
+        color: #000;
+        font-weight: 600;
+    }
+    .page-wrapper .body-wrapper .info-wrapper .info-profile-area .content .title{
+        color: #000;
+    }
+    .page-wrapper .body-wrapper .control-btn-area .btn-wrapper .theme-mode-btn{
+        border: 1px solid #ded7e9;
+        color: #464346;
+    }
+    .page-wrapper .body-wrapper .control-btn-area .btn-wrapper .theme-mode-btn:hover {
+        color: #29a7de;
+        border-color: #29a7de;
+    }
+    .page-wrapper .body-wrapper .control-btn-area .btn-wrapper .sidebar-mobile-btn{
+        border: 1px solid #ded7e9;
+        color: #464346;
+    }
+    .page-wrapper .body-wrapper .control-btn-area .btn-wrapper .sidebar-mobile-btn:hover{
+        color: #29a7de;
+        border-color: #29a7de;
+    }
+    .page-wrapper .body-wrapper .control-btn-area .add-modal-btn{
+        border: 1px solid #ded7e9;
+        color: #464346;
+    }
+    .page-wrapper .body-wrapper .control-btn-area .add-modal-btn:hover{
+        color: #29a7de;
+        border-color: #29a7de;
+    }
+    .page-wrapper .body-wrapper .info-wrapper .info-overview-area{
+        border-color: #ded7e9;
+    }
+    .page-wrapper .body-wrapper .info-wrapper{
+        border-color: #ded7e9;
+    }
+    .page-wrapper .body-wrapper .dash-card{
+        background: #fff;
+        box-shadow: 2px 3.464px 24px 0px rgba(106, 105, 194, 0.2);
+    }
+    .page-wrapper .body-wrapper .dash-card .title{
+        color: #000;
+    }
+    .page-wrapper .body-wrapper .reports-list li{
+        background: #F6F6F6;
+    }
+    .page-wrapper .body-wrapper .reports-list li:nth-child(even){
+        background: #fff;
+    }
+    .page-wrapper .body-wrapper .dash-card.orders .list-wrapper .list-single-wrapper .list-title{
+        color: #000;
+    }
+    .page-wrapper .body-wrapper .dash-card.orders .order-input input {
+        background: #F6F6F6;
+        border-color: transparent;
+        color: #000;
+        &::placeholder{
+            color: #464346;
+        }
+    }
+    .form--control {
+        background-color: transparent;
+        border: 1px solid #ded7e9;
+        color: #000;
+    }
+    input{
+        &::placeholder{
+            color: #585558b1;
+        }
+    }
+    .card-title{
+        color: #000;
+    }
+    .page-wrapper .body-wrapper form .profile-upload-wrapper .profile-thumb-area .profile-edit .rank-label .imgUp{
+        border-color: #fff;
+    }
+    .modal-content {
+        background: #fff;
+        border: 1px solid #ded7e9;
+    }
+    .modal-content .modal-title span{
+        color: #000;
+    }
+    .modal-content .modal-form-area .modal-widget .heading-area .title{
+        color: #000;
+    }
+    .btn--base{
+        color: #fff;
+        i{
+            color: #fff;
+        }
+    }
+    .page-wrapper .body-wrapper .dash-card .dash-card-header-wrapper .dropdown .dropdown-button {
+        color: #000;
+    }
+    .page-wrapper .body-wrapper .dash-card .dash-card-header-wrapper .dropdown .dropdown-menu {
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+        background: #fff;
+        border: 1px solid #ded7e9;
+        overflow: hidden;
+    }
+    .page-wrapper .body-wrapper .dash-card .dash-card-header-wrapper .dropdown .dropdown-item {
+        color: #333232;
+    }
+    .page-wrapper .body-wrapper .dash-card .dash-card-header-wrapper .dropdown .dropdown-item:hover {
+        background: #29a7de;
+        color: #fff;
+    }
+}

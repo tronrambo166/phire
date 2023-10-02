@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <!-- line-awesome-icon css -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- fontawesome-icon css -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- nice-select css link -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- lightcase css link -->
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <!-- animate css link -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- style css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="preloader">
+    <div class="loader"></div>
+</div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="body-overlay" class="body-overlay"></div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start page wrapper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="page-wrapper">
+    <div class="sidebar-menu">
+        <div class="sidebar-wrapper">
+            <div class="logo-wrapper">
+                <a href="index.html" class="site-logo theme-change">
+                    <img src="assets/images/logo/logo.png" white-img="assets/images/logo/logo.png"
+                    dark-img="assets/images/logo/logo-light.png" alt="logo">
+                </a>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-nav-item active">
+                    <a href="index.html" class="sidebar-nav-link">Overview</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#0" class="sidebar-nav-link">Analysis</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#0" class="sidebar-nav-link">EKGs</a>
+                </li>
+                <li class="sidebar-nav-item has-sub">
+                    <a href="#0" class="sidebar-nav-link">History</a>
+                    <ul class="sidebar-submenu">
+                        <li class="submenu-item">
+                            <a href="#0">Family</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#0">Medical</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#0">Social</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#0">Surgical</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#0" class="sidebar-nav-link">Imaging</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#0" class="sidebar-nav-link">Laboratory</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#0" class="sidebar-nav-link">Measurements</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#0" class="sidebar-nav-link">Medications</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#0" class="sidebar-nav-link">Reports</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#0" class="sidebar-nav-link">Orders</a>
+                </li>
+            </ul>
+            <div class="avatar-wrapper">
+                <div class="profile-avatar-wrapper">
+                    <a href="profile.html" class="profile-avatar">
+                        <img src="assets/images/user/user-3.jpg" alt="profile image">
+                    </a>
+                    <span class="avatar-badge">3</span>
+                </div>
+                <div class="avatar-content">
+                    <span class="profile-name">Dr. Johnson</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-wrapper">
+        <div class="control-btn-area">
+            <div class="btn-wrapper">
+                <button class="sidebar-mobile-btn" type="button"><i class="las la-exchange-alt"></i></button>
+                <button class="theme-mode-btn" type="button"><i class="las la-sun"></i></button>
+            </div>
+            <button class="add-modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Widget <i class="las la-plus"></i></button>
+        </div>
+        <div class="info-wrapper">
+            <div class="row align-items-end mb-30-none">
+                <div class="col-lg-5 col-md-5 col-sm-6 mb-30">
+                    <div class="info-profile-area">
+                        <div class="avatar">
+                            <img src="assets/images/user/user-1.jpg" alt="Avatar">
+                        </div>
+                        <div class="content">
+                            <h1 class="title">DOE, jane</h1>
+                            <ul class="content-list">
+                                <li>34 y.o. F (1/1/1990)</li>
+                                <li>MRN: 12345678</li>
+                                <li>Room: IA</li>
+                                <li>Ht: 58 1 Wt: 125 lbs I BMI 22</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-30">
+                    <div class="info-address-area">
+                        <div class="content">
+                            <ul class="content-list">
+                                <li>Admit date: 11/02/2023</li>
+                                <li>Allergies: No known drug allergies, Peaanuts</li>
+                                <li>Precautions: Aspration, Fall, Seizure</li>
+                                <li>Code status: FULL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 mb-30">
+                    <div class="info-overview-area">
+                        <ul class="info-overview-list">
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/images/element/thermometer.png" alt="icon">
+                                </div>
+                                <span class="value">98.6</span>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/images/element/heartbeat.png" alt="icon">
+                                </div>
+                                <span class="value">70</span>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/images/element/lungs.png" alt="icon">
+                                </div>
+                                <span class="value">18</span>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/images/element/blood-pressure.png" alt="icon">
+                                </div>
+                                <span class="value">120/75</span>
+                            </li>
+                        </ul>
+                        <div class="human-avatar">
+                            <img src="assets/images/element/human.png" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dash-card-wrapper">
+            <div class="row mb-30-none">
+                    <div class="col-lg-4 col-md-4 col-sm-6 mb-30 editModal">
+                        <div class="dash-card">
+                            <div class="dash-card-header-wrapper">
+                                <h4 class="title">Problem</h4>
+                                <div class="dropdown">
+                                    <button class="dropdown-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="las la-ellipsis-v"></i></button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><i class="las la-trash"></i> Remove</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li class="red"><span>Asthma</span><i class="fas fa-circle"></i></li>
+                                <li class="orange"><span>Migraines</span><i class="fas fa-circle"></i></li>
+                                <li class="orange"><span>Fibromyalgia</span><i class="fas fa-circle"></i></li>
+                                <li class="orange"><span>Crohn's Disease</span><i class="fas fa-circle"></i></li>
+                                <li class="orange"><span>UTIs (recurrent)</span><i class="fas fa-circle"></i></li>
+                                <li class="green"><span>Gout</span><i class="fas fa-circle"></i></li>
+                                <li class="green"><span>Rheumatic Fever</span><i class="fas fa-circle"></i></li>
+                                <li class="green"><span>Hypothryoidism</span><i class="fas fa-circle"></i></li>
+                                <li class="green"><span>Goodpasture's Syndrome</span><i class="fas fa-circle"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+          
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-30 editModal">
+                    <div class="dash-card">
+                        <div class="dash-card-header-wrapper">
+                            <h4 class="title">Medications (active)</h4>
+                            <div class="dropdown">
+                                <button class="dropdown-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="las la-ellipsis-v"></i></button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   
+                                    <li><a class="dropdown-item" href="#"><i class="las la-trash"></i> Remove</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="medications-list">
+                            <li>albuterol <span>asthma</span></li>
+                            <li>sumatriptan <span>migraines</span></li>
+                            <li>oxyCodone <span>fibromyalgia</span></li>
+                            <li>adalimumab <span>Crohn's disease</span></li>
+                            <li class="orange">TMP/sulfa <span>UTIs</span></li>
+                            <li class="orange">prednisone <span>Crohn's disease</span></li>
+                            <li>levothyroxine <span>hypothyroidism</span></li>
+                        </ul>
+                    </div >
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mb-30 editModal">
+                    <div class="dash-card">
+                        <div class="dash-card-header-wrapper">
+                            <h4 class="title">Diagnostics</h4>
+                            <div class="dropdown">
+                                <button class="dropdown-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="las la-ellipsis-v"></i></button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   
+                                    <li><a class="dropdown-item" href="#"><i class="las la-trash"></i> Remove</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="diagnostics-list">
+                            <li>
+                                <a href="assets/images/xray/1.jpeg" data-rel="lightcase:myCollection"><img src="assets/images/xray/1.jpeg" alt="image"></a>
+                            </li>
+                            <li>
+                                <a href="assets/images/xray/2.jpg" data-rel="lightcase:myCollection"><img src="assets/images/xray/2.jpg" alt="image"></a>
+                            </li>
+                            <li>
+                                <a href="assets/images/xray/3.jpg" data-rel="lightcase:myCollection"><img src="assets/images/xray/3.jpg" alt="image"></a>
+                            </li>
+                            <li>
+                                <a href="assets/images/xray/4.jpg" data-rel="lightcase:myCollection"><img src="assets/images/xray/4.jpg" alt="image"></a>
+                            </li>
+                            <li>
+                                <a href="assets/images/xray/5.jpg" data-rel="lightcase:myCollection"><img src="assets/images/xray/5.jpg" alt="image"></a>
+                            </li>
+                            <li>
+                                <a href="assets/images/xray/6.png" data-rel="lightcase:myCollection"><img src="assets/images/xray/6.png" alt="image"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 mb-30 editModal">
+                    <div class="dash-card reports">
+                        <div class="dash-card-header-wrapper">
+                            <h4 class="title">Reports</h4>
+                            <div class="dropdown">
+                                <button class="dropdown-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="las la-ellipsis-v"></i></button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   
+                                    <li><a class="dropdown-item" href="#"><i class="las la-trash"></i> Remove</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="reports-list">
+                            <li>
+                                <div class="title-area">
+                                    <span>Progress Note</span>
+                                    <span>Dr. Johnson</span>
+                                </div>
+                                <div class="value-area">
+                                    <span>11/09/23</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-area">
+                                    <span>Progress Note</span>
+                                    <span>Dr. Johnson</span>
+                                </div>
+                                <div class="value-area">
+                                    <span>11/09/23</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-area">
+                                    <span>Progress Note</span>
+                                    <span>Dr. Johnson</span>
+                                </div>
+                                <div class="value-area">
+                                    <span>11/09/23</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-area">
+                                    <span>Progress Note</span>
+                                    <span>Dr. Johnson</span>
+                                </div>
+                                <div class="value-area">
+                                    <span>11/09/23</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-area">
+                                    <span>Progress Note</span>
+                                    <span>Dr. Johnson</span>
+                                </div>
+                                <div class="value-area">
+                                    <span>11/09/23</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-area">
+                                    <span>Progress Note</span>
+                                    <span>Dr. Johnson</span>
+                                </div>
+                                <div class="value-area">
+                                    <span>11/09/23</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-area">
+                                    <span>Progress Note</span>
+                                    <span>Dr. Johnson</span>
+                                </div>
+                                <div class="value-area">
+                                    <span>11/09/23</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-30 editModal">
+                    <div class="dash-card orders">
+                        <div class="dash-card-header-wrapper">
+                            <h4 class="title">Orders (non-medication)</h4>
+                            <div class="dropdown">
+                                <button class="dropdown-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="las la-ellipsis-v"></i></button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   
+                                    <li><a class="dropdown-item" href="#"><i class="las la-trash"></i> Remove</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-wrapper">
+                            <div class="list-single-wrapper">
+                                <h4 class="list-title">Patient</h4>
+                                <ul class="orders-list">
+                                    <li>Activity: Up <span>Ad Lib</span></li>
+                                    <li>Diet: CHO restricted <span>omeal</span></li>
+                                    <li>Restrict fluids: 1 L <span>daily</span></li>
+                                </ul>
+                            </div>
+                            <div class="list-single-wrapper">
+                                <h4 class="list-title">Nurse</h4>
+                                <ul class="orders-list">
+                                    <li>Check fingersticks <span>q4 hrs</span></li>
+                                    <li>Check vitals <span>q4 hrs</span></li>
+                                    <li>Check wound <span>Daily</span></li>
+                                    <li>Weights <span>Daily</span></li>
+                                    <li>Insert IV <span>Once</span></li>
+                                    <li>Measure Intake/Output <span>qShift</span></li>
+                                    <li>Turn patient <span>qShift</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="order-input">
+                            <input type="text" placeholder="New Order" class="form--control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End page wrapper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Add Modal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title"><i class="las la-plus"></i> <span>Create New Widget</span></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
+              </div>
+            <div class="modal-body">
+                <form class="modal-form-area">
+                    <div class="widget-type-select-area">
+                        <label>Select Widget Type <span class="text--base">*</span></label>
+                        <select class="form--control" name="widget_type">
+                            <option value="Problem">Problem</option>
+                            <option value="Medications">Medications</option>
+                            <option value="Diagnostics">Diagnostics</option>
+                            <option value="Reports">Reports</option>
+                            <option value="Orders">Orders</option>
+                        </select>
+                    </div>
+
+                    <!-- problem widget start -->
+                    <div class="modal-widget" style="display: none" id="problem-widget">
+                        <div class="heading-area">
+                            <h4 class="title">Problem Widget</h4>
+                            <button class="btn--base">Add <i class="las la-plus"></i></button>
+                        </div>
+                        <div class="modal-fields problem-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Problem Name</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Problem Name...">
+                                </div>
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Problem Status</label>
+                                    <select class="form--control">
+                                        <option value="">Select Status</option>
+                                        <option value="primary">Primary</option>
+                                        <option value="success">Success</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="warning">Warning</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-fields problem-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Problem Name</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Problem Name...">
+                                </div>
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Problem Status</label>
+                                    <select class="form--control">
+                                        <option value="">Select Status</option>
+                                        <option value="primary">Primary</option>
+                                        <option value="success">Success</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="warning">Warning</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- problem widget end -->
+
+                    <!-- Medications widget start -->
+                    <div class="modal-widget" style="display: none" id="medications-widget">
+                        <div class="heading-area">
+                            <h4 class="title">Medications Widget</h4>
+                            <button class="btn--base">Add <i class="las la-plus"></i></button>
+                        </div>
+                        <div class="modal-fields medications-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Medications Brand</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Medications Brand...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Medications Name</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Medications Name...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Medications Status</label>
+                                    <select class="form--control">
+                                        <option value="">Select Status</option>
+                                        <option value="primary">Primary</option>
+                                        <option value="success">Success</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="warning">Warning</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-fields medications-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Medications Brand</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Medications Brand...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Medications Name</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Medications Name...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Medications Status</label>
+                                    <select class="form--control">
+                                        <option value="">Select Status</option>
+                                        <option value="primary">Primary</option>
+                                        <option value="success">Success</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="warning">Warning</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Medications widget start -->
+
+                    <!-- Report widget start -->
+                    <div class="modal-widget" style="display: none" id="report-widget">
+                        <div class="heading-area">
+                            <h4 class="title">Reports Widget</h4>
+                            <button class="btn--base">Add <i class="las la-plus"></i></button>
+                        </div>
+                        <div class="modal-fields report-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Report</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Report...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Report By</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Doctor Name...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Report Date</label>
+                                    <input type="date" class="form--control">
+                                </div>
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Report widget start -->
+
+                    <!-- Orders widget start -->
+                    <div class="modal-widget" style="display: none" id="order-widget">
+                        <div class="heading-area">
+                            <h4 class="title">Patient</h4>
+                            <button class="btn--base">Add <i class="las la-plus"></i></button>
+                        </div>
+                        <div class="modal-fields order-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Activity</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Activity...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Patient Condition</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Patient Condition...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Others</label>
+                                    <input type="text" class="form--control" placeholder="Others...">
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-fields order-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Activity</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Activity...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Patient Condition</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Patient Condition...">
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <label>Others</label>
+                                    <input type="text" class="form--control" placeholder="Others...">
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="heading-area mt-40">
+                            <h4 class="title">Nurse</h4>
+                            <button class="btn--base">Add <i class="las la-plus"></i></button>
+                        </div>
+                        <div class="modal-fields order-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Checkup Name</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Checkup Name...">
+                                </div>
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Result</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Result...">
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-fields order-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Checkup Name</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Checkup Name...">
+                                </div>
+                                <div class="col-lg-3 col-md-3 form-group">
+                                    <label>Result</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Result...">
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Orders widget start -->
+
+                    <!-- Diagnostics widget start -->
+                    <div class="modal-widget" style="display: none" id="diagnostics-widget">
+                        <div class="heading-area">
+                            <h4 class="title">Diagnostics Widget</h4>
+                            <button class="btn--base">Add <i class="las la-plus"></i></button>
+                        </div>
+                        <div class="modal-fields diagnostics-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-6 col-md-6 form-group">
+                                    <label>Select Image</label>
+                                    <input type="file" name="name" class="form--control">
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                                <div class="col-lg-2 col-md-2 form-group">
+                                    <a href="#0" class="btn--base bg-danger w-100">
+                                        <i class="las la-backspace"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Diagnostics widget start -->
+
+                    <div class="modal-btn-area mt-30">
+                        <button type="submit" class="btn--base w-100">Create <i class="fas fa-check-circle ms-1"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Add Modal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Edit Modal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title"><i class="las la-plus"></i> <span>Create New Widget</span></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
+              </div>
+            <div class="modal-body">
+                <form class="modal-form-area">
+                    <!-- problem widget start -->
+                    <div class="modal-widget">
+                        <div class="heading-area">
+                            <h4 class="title">Problem Widget</h4>
+                        </div>
+                        <div class="modal-fields problem-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Problem Name</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Problem Name...">
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Problem Status</label>
+                                    <select class="form--control">
+                                        <option value="">Select Status</option>
+                                        <option value="primary">Primary</option>
+                                        <option value="success">Success</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="warning">Warning</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-fields problem-fields">
+                            <div class="row justify-content-center align-items-end mb-10-none">
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Problem Name</label>
+                                    <input type="text" name="name" class="form--control" placeholder="Enter Problem Name...">
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Problem Status</label>
+                                    <select class="form--control">
+                                        <option value="">Select Status</option>
+                                        <option value="primary">Primary</option>
+                                        <option value="success">Success</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="warning">Warning</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <label>Description</label>
+                                    <textarea class="form--control" placeholder="Type..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- problem widget end -->
+                    <div class="modal-btn-area mt-30">
+                        <button type="submit" class="btn--base w-100">Create <i class="fas fa-check-circle ms-1"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Edit Modal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+<!-- jquery -->
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- nice-select -->
+<script src="assets/js/jquery.nice-select.js"></script>
+<!-- lightcase -->
+<script src="assets/js/lightcase.js"></script>
+<!-- main -->
+<script src="assets/js/main.js"></script>
+
+<script>
+    $(document).ready(function(){
+        makeShowHide();
+    });
+    $("select[name=widget_type]").change(function(){
+        makeShowHide();
+    });
+        function makeShowHide(){
+        var widget_type = $("select[name=widget_type] :selected").val();
+            const problemWidget = document.getElementById('problem-widget');
+            const medications_widget = document.getElementById('medications-widget');
+            const report_widget = document.getElementById('report-widget');
+            const order_widget = document.getElementById('order-widget');
+            const diagnostics_widget = document.getElementById('diagnostics-widget');
+
+            if (widget_type === 'Problem') {
+                problemWidget.style.display = '';
+                medications_widget.style.display = 'none';
+                report_widget.style.display = 'none';
+                order_widget.style.display = 'none';
+                diagnostics_widget.style.display = 'none';
+            } else if (widget_type === 'Medications') {
+                problemWidget.style.display = 'none';
+                medications_widget.style.display = '';
+                report_widget.style.display = 'none';
+                order_widget.style.display = 'none';
+                diagnostics_widget.style.display = 'none';
+            } else if (widget_type === 'Diagnostics') {
+                problemWidget.style.display = 'none';
+                medications_widget.style.display = 'none';
+                report_widget.style.display = 'none';
+                order_widget.style.display = 'none';
+                diagnostics_widget.style.display = '';
+            
+            } else if (widget_type === 'Reports') {
+                problemWidget.style.display = 'none';
+                medications_widget.style.display = 'none';
+                report_widget.style.display = '';
+                order_widget.style.display = 'none';
+                diagnostics_widget.style.display = 'none';
+            
+            } else if (widget_type === 'Orders') {
+                problemWidget.style.display = 'none';
+                medications_widget.style.display = 'none';
+                report_widget.style.display = 'none';
+                order_widget.style.display = '';
+                diagnostics_widget.style.display = 'none';
+            }
+        }
+        $(document).ready(function () {
+    // Add a double-click event listener to the 'editModal' links
+    $(".editModal").dblclick(function () {
+      // Show the modal with a specific ID (e.g., 'myModal')
+      $("#editModal").modal("show");
+    });
+  });
+
+</script>
+
+
+</body>
+</html>

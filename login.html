@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <!-- line-awesome-icon css -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- fontawesome-icon css -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- nice-select css link -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- lightcase css link -->
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <!-- animate css link -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- style css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="preloader">
+    <div class="loader"></div>
+</div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="body-overlay" class="body-overlay"></div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Login
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="auth-section">
+    <div class="box">
+        <span class="borderLine"></span>
+        <form>
+          <h2>Sign In</h2>
+          <div class="inputBox">
+            <input type="text" required="required">
+            <span>Username</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input type="password" required="required">
+            <span>Password</span>
+            <i></i>
+          </div>
+          <div class="links">
+            <a href="#">Forgot Password</a>
+            <a href="#">Signup</a>
+          </div>
+          <button class="submit-button">Login</button>
+        </form>
+      </div>
+      </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Login
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+<!-- jquery -->
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- nice-select -->
+<script src="assets/js/jquery.nice-select.js"></script>
+<!-- lightcase -->
+<script src="assets/js/lightcase.js"></script>
+<!-- main -->
+<script src="assets/js/main.js"></script>
+
+<script>
+    $(document).ready(function(){
+        makeShowHide();
+    });
+    $("select[name=widget_type]").change(function(){
+        makeShowHide();
+    });
+    function makeShowHide(){
+        var widget_type = $("select[name=widget_type] :selected").val();
+            const problemWidget = document.getElementById('problem-widget');
+            const medications_widget = document.getElementById('medications-widget');
+            const report_widget = document.getElementById('report-widget');
+            const order_widget = document.getElementById('order-widget');
+            const diagnostics_widget = document.getElementById('diagnostics-widget');
+
+            if (widget_type === 'Problem') {
+                problemWidget.style.display = '';
+                medications_widget.style.display = 'none';
+                report_widget.style.display = 'none';
+                order_widget.style.display = 'none';
+                diagnostics_widget.style.display = 'none';
+            } else if (widget_type === 'Medications') {
+                problemWidget.style.display = 'none';
+                medications_widget.style.display = '';
+                report_widget.style.display = 'none';
+                order_widget.style.display = 'none';
+                diagnostics_widget.style.display = 'none';
+            } else if (widget_type === 'Diagnostics') {
+                problemWidget.style.display = 'none';
+                medications_widget.style.display = 'none';
+                report_widget.style.display = 'none';
+                order_widget.style.display = 'none';
+                diagnostics_widget.style.display = '';
+            
+            } else if (widget_type === 'Reports') {
+                problemWidget.style.display = 'none';
+                medications_widget.style.display = 'none';
+                report_widget.style.display = '';
+                order_widget.style.display = 'none';
+                diagnostics_widget.style.display = 'none';
+            
+            } else if (widget_type === 'Orders') {
+                problemWidget.style.display = 'none';
+                medications_widget.style.display = 'none';
+                report_widget.style.display = 'none';
+                order_widget.style.display = '';
+                diagnostics_widget.style.display = 'none';
+            }
+    }
+</script>
+
+
+</body>
+</html>
